@@ -1,29 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,500&display=swap');
 
+@import "../src/sass/variables.scss";
+
 .navbar
 {
   background-color: white;
+
+  .navbar-brand{
+    font-size: 1.9rem;
+    color: $brand-clr;
+  }
+  
+  & a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+  
+  & a:hover
+  {
+    color: cornflowerblue;
+  }
+  
+  .menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid $brand-clr;
+  }
 }
 
-.navbar-brand{
-  font-size: 1.9rem;
-  color: rgb(92, 153, 214);
-}
 
-.navbar a{
-  font-size: 1.3rem;
-  text-transform: capitalize;
-}
-
-.navbar a:hover
-{
-  color: cornflowerblue;
-}
-
-.menu_active{
-  font-weight: bold;
-  border-bottom: 1px solid slateblue;
-}
 
 #header{
   width: 100%;
@@ -75,18 +79,18 @@
 
 @-webkit-keyframes up-down{
   0%{
-    transform: translateX(10px);
+    transform: translateY(10px);
   }
   100%{
-    transform: translateX(-10px);
+    transform: translateY(-10px);  
   }
 }
 
 @keyframes up-down{
   0%{
-    transform: translateX(10px);
+    transform: translateY(10px);
   }
   100%{
-    transform: translateX(-10px);
+    transform: translateY(-10px);
   }
 }

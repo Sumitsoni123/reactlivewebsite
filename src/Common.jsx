@@ -19,9 +19,9 @@ const Common = (props) => {
                                     <div className="mt-3" >
                                         <NavLink to={props.visit} className="btn-get-started" >{props.btname}</NavLink>
                                     </div>
-                                    <div className="col-lg-6 order-1 order-lg-2 header-img">
-                                        <img src={props.img} className="img-fluid animated" alt="img" />
-                                    </div>
+                                </div>
+                                <div className="col-lg-6 order-1 order-lg-2 header-img">
+                                    <img src={props.img} className="img-fluid animated" alt="img" />
                                 </div>
                             </div>
                         </div>

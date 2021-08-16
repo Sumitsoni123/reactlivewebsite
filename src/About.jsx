@@ -6,7 +6,11 @@ import Common from './Common';
 const About = () => {
     return (
         <>
-            <Common name="Let us Introduce To" img={Img3} visit="/contact" btname="Contact Now" />
+            <Common name="Let us Introduce To"
+                img={Img3}
+                visit="/contact"
+                btname="Contact Now"
+            />
         </>
     );
 };
